@@ -102,12 +102,14 @@
         // Lógica do movimento Vertical
         // ============================================
 
+        // Define a direção vertical do passarinho
         if (bird.y === 100) {
           bird.verticalMovement = true;
         } else if (bird.y === 500) {
           bird.verticalMovement = false;
         }
 
+        // Movimenta o pássaro pra cima ou pra baixo
         if (bird.verticalMovement) {
           bird.y += 5;
         } else {
